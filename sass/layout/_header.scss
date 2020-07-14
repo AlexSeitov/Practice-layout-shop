@@ -1,0 +1,112 @@
+.header {
+    &__top-inner {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 122px;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__address {
+        width: 265px;
+        margin-right: 60px;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    &__address::before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/address-icon.svg");
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        left: 0;
+    }
+
+    &__bottom {
+        margin-bottom: 78px;
+    }
+}
+
+.menu {
+    &__item {
+        display: inline-block;
+    }
+
+    &__item + .menu__item {
+        margin-left: 50px;
+    }
+}
+
+.user-list {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    &__item {
+        padding-right: 10px;
+    }
+}
+
+.basket {
+    position: relative;
+
+    &__num {
+        position: absolute;
+        right: -14px;
+        bottom: -5px;
+        font-family: "SFProDisplay-Medium", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        background-color: #1c62cd;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f4;
+    padding-top: 15px;
+    padding-bottom: 14px;
+
+    &__item {
+        position: relative;
+    }
+
+    &__link {
+        transition: all 0.3s;
+    }
+
+    &__link::before {
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        right: 0;
+        left: auto;
+        bottom: -16px;
+        background-color: #1c62cd;
+        transition: all 0.3s;
+    }
+
+    &__link:hover {
+        color: #000;
+    }
+
+    &__link:hover::before {
+        width: 100%;
+        right: auto;
+        left: 0;
+    }
+}
