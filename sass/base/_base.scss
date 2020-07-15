@@ -24,6 +24,7 @@ body {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -45,4 +46,8 @@ h6 {
 
 p {
     margin: 0;
+}
+
+.page-section {
+    margin-bottom: 80px;
 }
