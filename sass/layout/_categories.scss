@@ -1,0 +1,61 @@
+.categories {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 370px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        border: 1px solid #cdcdcd;
+        border-radius: 3px;
+        padding: 20px 20px 16px;
+        transition: all 0.3s;
+    }
+
+    &__item:hover {
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    }
+
+    &__item-info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item-title {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 28px;
+        transition: all 0.3s;
+    }
+
+    &__item:hover .categories__item-title {
+        color: #1c62cd;
+    }
+
+    &__item-text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #c4c4c4;
+    }
+
+    &__item-text::after {
+        content: url(../images/link-arrow.png);
+        padding-left: 4px;
+    }
+
+    &__item-img {
+        text-align: center;
+        width: 50%;
+    }
+
+    &__item-img img {
+        max-width: 100%;
+    }
+}
