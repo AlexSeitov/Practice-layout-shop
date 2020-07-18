@@ -46,7 +46,7 @@
     }
 
     &__item-text::after {
-        content: url(../images/link-arrow.png);
+        content: url('../images/link-arrow.png');
         padding-left: 4px;
     }
 
