@@ -1,0 +1,23 @@
+.breadcrumbs {
+    margin-bottom: 40px;
+
+    &__list-item {
+        display: inline-block;
+        font-size: 15px;
+        line-height: 18px;
+        color: #c4c4c4;
+        padding-right: 16px;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    &__list-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 4px;
+        background-image: url('../images/link-arrow.png');
+        width: 6px;
+        height: 9px;
+    }
+}
