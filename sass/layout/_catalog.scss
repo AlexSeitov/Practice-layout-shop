@@ -1,0 +1,96 @@
+.catalog {
+    margin-bottom: 100px;
+
+    &__tile {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 26px;
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__filter-items button {
+        font-size: 14px;
+        line-height: 17px;
+        opacity: 0.7;
+        border-radius: 3px;
+        padding: 5px 22px;
+    }
+
+    &__filter-items button + button {
+        margin-left: 8px;
+    }
+
+    &__filter-btn {
+        display: flex;
+    }
+
+    &__filter-btn button {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    &__filter-btn button + button {
+        margin-left: 10px;
+    }
+
+    &__filter-btn-grid {
+    }
+
+    &__filter-btn-line {
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__inner-aside {
+        min-width: 290px;
+        margin-right: 10px;
+    }
+
+    &__inner-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__inner-list .product-item__wrapper {
+        margin-bottom: 30px;
+    }
+}
+
+.product-item__img {
+    max-width: 100%;
+}
+.product-item--sale {
+}
+
+.pagination {
+    width: 100%;
+    margin-top: 70px;
+}
+.pagination-list {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        padding: 6px 12px;
+        border: 2px solid transparent;
+        margin: 0 4px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #c4c4c4;
+    }
+
+    &__item.active {
+        border: 2px solid #1c62cd;
+        color: #1c62cd;
+    }
+}
