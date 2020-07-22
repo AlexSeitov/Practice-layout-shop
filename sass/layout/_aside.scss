@@ -1,0 +1,429 @@
+.aside-filter {
+    min-width: 290px;
+    margin-right: 10px;
+
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tab {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        width: 50%;
+        color: #c4c4c4;
+    }
+
+    &__tab.tab--active {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        color: #2f3035;
+    }
+
+    &__tab.tab--active span {
+        display: inline-block;
+        border-bottom: 2px solid #1c62cd;
+        padding-bottom: 7px;
+    }
+
+    &__tabs-content {
+    }
+
+    &__item-drop {
+        margin: 40px 0;
+    }
+
+    &__item-title {
+        font-family: "SFProDisplay-Semibold", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 26px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    &__content-box {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    &__content-label {
+        font-size: 14px;
+        line-height: 17px;
+        cursor: pointer;
+    }
+
+    &__content.aside-filter__content-radio {
+        flex-wrap: nowrap;
+    }
+
+    &__item-list {
+        margin: 46px 0 40px;
+    }
+    &__item-btn {
+        text-align: center;
+    }
+}
+
+.filter {
+    &__item-drop {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__item-drop::before {
+        content: "";
+        background-image: url("../images/arrow-down.svg");
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 12px;
+        height: 8px;
+        transform: rotate(0deg);
+    }
+
+    &__item-drop--active::before {
+        transform: rotate(180deg);
+    }
+
+    &__item-list {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #c4c4c4;
+        padding-top: 34px;
+    }
+
+    &__item-list-title {
+        font-family: "SFProDisplay-Semibold", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 14px;
+        padding-left: 26px;
+    }
+
+    &__item-list-select {
+    }
+
+    &__more {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    &__more-btn {
+        font-size: 14px;
+        line-height: 17px;
+        color: #1c62cd;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #1c62cd;
+        padding: 0;
+    }
+
+    &__search {
+        width: 100%;
+        border: 1px solid #e0e0e0;
+        height: 30px;
+        padding: 7px 20px 8px;
+        margin-bottom: 20px;
+    }
+
+    &__search::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+        color: #bdbec2;
+    }
+}
+
+.filter-btn__send {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #bdbec2;
+    padding: 16px 85px;
+    margin-bottom: 15px;
+}
+
+.filter-btn__send--active {
+    background-color: #1c62cd;
+    color: #fff;
+}
+
+.filter-extra {
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+    padding-right: 29px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.filter-extra::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-image: url('../images/arrow-down.svg');
+    width: 12px;
+    height: 8px;
+}
+
+.filter-extra__content {
+    display: none;
+}
+
+.filter-extra.filter__item-drop--active::after {
+    transform: rotate(180deg);
+}
+
+.filter-btn__reset {
+    font-size: 13px;
+    line-height: 16px;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+    color: #c4c4c4;
+    background-color: transparent;
+}
+
+.btn-checked .aside-filter__content {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.btn-checked .aside-filter__content-box {
+    width: auto;
+}
+
+.btn-checked .aside-filter__content-label {
+    position: relative;
+    height: 25px;
+    width: 63px;
+}
+
+.btn-checked .jq-checkbox {
+    height: 25px;
+    width: 63px;
+    background-color: #f0f0f4;
+    border: none;
+}
+
+.btn-checked .jq-checkbox.checked {
+    background: #1c62cd;
+    color: #fff;
+}
+
+.btn-checked .jq-checkbox.checked .jq-checkbox__div {
+    display: none;
+}
+
+.btn-checked__text {
+    font-family: "SFProDisplay-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    color: #c4c4c4;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-57%);
+    z-index: 100;
+}
+
+.btn-checked .jq-checkbox.checked ~ .btn-checked__text {
+    color: #fff;
+}
+
+.jq-selectbox__select {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #48494d;
+    height: 20px;
+    padding: 0 25px 0 10px;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+}
+
+.jq-selectbox__trigger {
+    background-image: url(../images/arrow-down.svg);
+    top: 6px;
+    right: 9px;
+    width: 12px;
+    height: 8px;
+    border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border: none;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+    border: none;
+}
+
+.jq-selectbox__select:hover,
+.jq-selectbox__select:active {
+    background: transparent;
+    box-shadow: none;
+}
+
+.jq-selectbox li {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox__dropdown {
+    border-radius: 0;
+    padding-top: 15px;
+}
+
+.jq-selectbox li:hover {
+    background: rgba(107, 126, 172, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox li.selected {
+    background: rgba(107, 126, 172, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-checkbox,
+.jq-radio {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    border-radius: 1px;
+    box-shadow: none;
+    vertical-align: -2px;
+    margin: 0 8px 0 0;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+    background-color: #1c62cd;
+    border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+    background-image: url("../images/checked.svg");
+    width: 8px;
+    height: 6px;
+    margin: 4px 0 0 3px;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(0deg);
+}
+
+.jq-radio.checked .jq-radio__div {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    border-radius: 0%;
+    background: transparent;
+    box-shadow: none;
+}
+
+.irs--flat.irs-with-grid {
+    width: 100%;
+}
+
+.irs--flat {
+    width: 100%;
+    margin-top: -15px;
+}
+
+.irs--flat .irs-line {
+    height: 1px;
+    background-color: #e0e0e0;
+    border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+    height: 3px;
+    background-color: #1c62cd;
+}
+
+.irs--flat .irs-handle {
+    width: 8px;
+    height: 8px;
+    background-color: #1c62cd;
+    border-radius: 50%;
+}
+
+.irs--flat .irs-handle > i:first-child,
+.irs--flat .irs-handle.state_hover > i:first-child,
+.irs--flat .irs-handle:hover > i:first-child {
+    background-color: transparent;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    font-family: "Barlow", sans-serif;
+    top: 60px;
+    padding: 0;
+    font-size: 14px;
+    text-decoration: underline;
+    text-shadow: none;
+    color: #2f3035;
+    background-color: transparent;
+    border-radius: 0;
+    visibility: visible !important;
+    padding-left: 27px;
+}
+
+.irs-min::before,
+.irs-max::before {
+    font-size: 14px;
+    line-height: 17px;
+    color: #c4c4c4;
+    position: absolute;
+    left: 0;
+}
+
+.irs-min::before {
+    content: "от";
+}
+
+.irs-max::before {
+    content: "до";
+}
+
+.tabs-wrapper {
+}
+.tabs {
+}
+.tab {
+}
+.tab--active {
+}
+.tabs-container {
+}
+.tabs-content {
+}
+.tabs-content--active {
+}

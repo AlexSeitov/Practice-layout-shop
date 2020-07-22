@@ -27,9 +27,15 @@
 .product-item__wrapper {
     position: relative;
     width: 271px;
+    transition: all 0.3s;
+}
+
+.product-item__wrapper--list {
+    width: 100%;
 }
 
 .product-item {
+    width: 100%;
     border: 1px solid #cdcdcd;
     border-radius: 3px;
     text-align: center;

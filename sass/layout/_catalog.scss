@@ -28,7 +28,7 @@
     }
 
     &__filter-btn {
-        display: flex;
+
     }
 
     &__filter-btn button {
@@ -41,18 +41,25 @@
     }
 
     &__filter-btn-grid {
+        width: 26px;
+        height: 21px;
     }
 
     &__filter-btn-line {
+        width: 26px;
+        height: 21px;
+    }
+
+    &__filter-buttons {
+        opacity: 0.4;
+    }
+
+    &__filter-buttons--active {
+        opacity: 1;
     }
 
     &__inner {
         display: flex;
-    }
-
-    &__inner-aside {
-        min-width: 290px;
-        margin-right: 10px;
     }
 
     &__inner-list {
@@ -64,6 +71,18 @@
     &__inner-list .product-item__wrapper {
         margin-bottom: 30px;
     }
+}
+
+.select-item {
+    border: 1.5px solid #D7D9DF;
+    padding: 8px 10px 7px 20px;
+    margin-right: 34px;
+}
+
+.select-item .jq-selectbox__select-text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 14px;
 }
 
 .product-item__img {
