@@ -1,4 +1,4 @@
- .banner-section {
+.banner-section {
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -12,8 +12,6 @@
         min-height: 400px;
     }
 
-    
-
     &__slider-btnprev {
         left: 20px;
     }
@@ -23,7 +21,8 @@
     }
 }
 
-.banner-section__slider-btn, .product-slider__slider-btn {
+.banner-section__slider-btn,
+.product-slider__slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

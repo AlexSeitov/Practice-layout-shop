@@ -1,0 +1,171 @@
+.product-card {
+    margin-bottom: 80px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img-box {
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        width: 500px;
+        padding-top: 64px;
+        position: relative;
+    }
+
+    &__img-box::before {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.12em;
+        padding: 13px 25px;
+        border-radius: 3px;
+    }
+
+    &__img {
+    }
+
+    &__price-old {
+        background-image: url("../images/old-line.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        font-size: 30px;
+        line-height: 44px;
+        opacity: 0.6;
+        margin-bottom: 10px;
+    }
+
+    &__price-new {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 17px;
+    }
+
+    &__link {
+        font-size: 15px;
+        line-height: 18px;
+        color: #1c62cd;
+        border-bottom: 1px solid #1c62cd;
+    }
+
+    &__content {
+        width: 570px;
+    }
+
+    &__code {
+        font-size: 15px;
+        line-height: 18px;
+        opacity: 0.6;
+        margin-bottom: 22px;
+    }
+
+    &__buttons {
+        margin-bottom: 50px;
+    }
+
+    &__buttons a + a {
+        margin-left: 25px;
+    }
+
+    &__icon-favorite {
+    }
+
+    &__icon-comparison {
+    }
+
+    &__tabs {
+    }
+
+    &__tab {
+        font-size: 20px;
+        line-height: 24px;
+        opacity: 0.6;
+        padding-right: 17px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+    &__tab + &__tab {
+        padding-left: 17px;
+    }
+
+    &__tab.tab--active {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        opacity: 1;
+        border-bottom: 2px solid #1c62cd;
+    }
+
+    &__tab-content {
+    }
+
+    &__title {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+        padding: 15px 0 6px;
+    }
+
+    &__item-left {
+        padding-right: 15px;
+    }
+
+    &__item-right {
+        width: 125px;
+    }
+
+    &__more {
+        font-size: 14px;
+        line-height: 17px;
+        color: #1c62cd;
+        border-bottom: 1px solid #1c62cd;
+        margin-bottom: 40px;
+    }
+
+    &__btn button {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #1c62cd;
+        padding: 17px 53px 15px;
+        border-radius: 3px;
+    }
+}
+.rate {
+    vertical-align: middle;
+}
+.tads-wrapper {
+}
+.tabs {
+}
+.tab {
+}
+.tab--active {
+}
+.tabs-container {
+}
+
+.tabs-content--active {
+}

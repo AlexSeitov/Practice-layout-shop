@@ -66,4 +66,11 @@ $(function () {
         $('.catalog__filter-btn-grid').removeClass('catalog__filter-buttons--active');
         $('.product-item__wrapper').addClass('product-item__wrapper--list');
     });
+
+    $(".rate-Yo").rateYo({
+        starWidth: "23px",
+        ratedFill: "#1c62cd",
+        spacing   : "10px",
+        normalFill: "#c4c4c4"
+      });
 });

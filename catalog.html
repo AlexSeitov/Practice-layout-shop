@@ -139,12 +139,12 @@
         <aside class="catalog__inner-aside aside-filter">
           <div class="tabs-wrapper">
             <div class="aside-filter__tabs tabs">
-              <a class="aside-filter__tab tab tab--active" href="#"><span>Параметры</span></a>
-              <a class="aside-filter__tab tab tab--active" href="#"><span>по марке</span></a>
+              <a class="aside-filter__tab tab tab--active" href="#filter-1"><span>Параметры</span></a>
+              <a class="aside-filter__tab tab" href="#filter-2"><span>по марке</span></a>
             </div>
 
             <div class="tabs-container">
-              <div class="aside-filter__tabs-content tabs-content tabs-content--active">
+              <div class="aside-filter__tabs-content tabs-content tabs-content--active" id="filter-1">
 
                 <form class="aside-filter__form" action="#">
                   <ul class="aside-filter__list">
@@ -360,7 +360,9 @@
                 </form>
 
               </div>
-              <div class="aside-filter__tabs-content tabs-content"></div>
+              <div class="aside-filter__tabs-content tabs-content" id="filter-2">
+                content-2
+              </div>
             </div>
           </div>
         </aside>
