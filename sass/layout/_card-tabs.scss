@@ -1,0 +1,126 @@
+.card-tabs {
+    margin-bottom: 100px;
+    &__wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 22px 0;
+        background-color: #f0f0f4;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+    }
+}
+.container {
+}
+.tabs-wrapper {
+}
+.tabs {
+}
+.card-tab {
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 0.6;
+}
+
+.card-tab.tab--active {
+    border-bottom: 2px solid #1c62cd;
+    opacity: 1;
+}
+
+.tabs-container {
+}
+.tabs-content--active {
+}
+.card {
+    &__top-line {
+        margin-bottom: 10px;
+    }
+
+    &__lable-search {
+        font-size: 17px;
+        line-height: 20px;
+        color: rgba(47, 48, 53, 0.7);
+    }
+
+    &__input-search {
+        background-color: #f0f0f4;
+        border-radius: 3px;
+        border: none;
+        padding: 9px 37px 9px 17px;
+        margin-left: 17px;
+        margin-right: 100px;
+    }
+
+    &__lable-pickup {
+        font-size: 17px;
+        line-height: 20px;
+        opacity: 0.7;
+        margin-left: 55px;
+        color: rgba(47, 48, 53, 0.7);
+    }
+
+    &__list {
+    }
+
+    &__list-item {
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(47, 48, 53, 0.7);
+        display: flex;
+        border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+        padding: 20px 0;
+    }
+
+    &__list-address {
+        width: 220px;
+        margin-right: 80px;
+    }
+
+    &__list-title {
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(47, 48, 53, 1);
+    }
+
+    &__list-workhours {
+        width: 157px;
+        margin-right: 96px;
+    }
+
+
+    &__list-avaialable {
+        width: 140px;
+        margin-right: 60px;
+    }
+
+    &__list-avaialable-title {
+    }
+
+    &__list-num {
+        width: 104px;
+    }
+
+    &__list-num-title {
+    }
+
+    &__list-btn {
+        margin-left: auto;
+    }
+
+    &__list-btn button {
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.12em;
+        color: #ffffff;
+        background-color: #1C62CD;
+        padding: 9px 40px;
+        border-radius: 3px;
+    }
+}
+
+.workhours {
+    display: flex;
+    justify-content: space-between;
+}

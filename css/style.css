@@ -1641,4 +1641,119 @@ span {
 .rate {
   vertical-align: middle;
 }
+
+.card-tabs {
+  margin-bottom: 100px;
+}
+
+.card-tabs__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 0;
+  background-color: #f0f0f4;
+  margin-bottom: 50px;
+}
+
+.card-tab {
+  font-size: 20px;
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+.card-tab.tab--active {
+  border-bottom: 2px solid #1c62cd;
+  opacity: 1;
+}
+
+.card__top-line {
+  margin-bottom: 10px;
+}
+
+.card__lable-search {
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(47, 48, 53, 0.7);
+}
+
+.card__input-search {
+  background-color: #f0f0f4;
+  border-radius: 3px;
+  border: none;
+  padding: 9px 37px 9px 17px;
+  margin-left: 17px;
+  margin-right: 100px;
+}
+
+.card__lable-pickup {
+  font-size: 17px;
+  line-height: 20px;
+  opacity: 0.7;
+  margin-left: 55px;
+  color: rgba(47, 48, 53, 0.7);
+}
+
+.card__list-item {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(47, 48, 53, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+  padding: 20px 0;
+}
+
+.card__list-address {
+  width: 220px;
+  margin-right: 80px;
+}
+
+.card__list-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2f3035;
+}
+
+.card__list-workhours {
+  width: 157px;
+  margin-right: 96px;
+}
+
+.card__list-avaialable {
+  width: 140px;
+  margin-right: 60px;
+}
+
+.card__list-num {
+  width: 104px;
+}
+
+.card__list-btn {
+  margin-left: auto;
+}
+
+.card__list-btn button {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  background-color: #1C62CD;
+  padding: 9px 40px;
+  border-radius: 3px;
+}
+
+.workhours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */
