@@ -1,3 +1,9 @@
+@media (max-width: 1300px) {
+    .product__more {
+        margin-top: 60px;
+    }
+}
+
 @media (max-width: 1200px) {
     .banner-section__slider-img {
         max-width: 600px;
@@ -16,6 +22,9 @@
         justify-content: space-around;
     }
 
+    .banner__link img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -107,6 +116,11 @@
     .search__content-input {
         height: 50px;
         padding-right: 50px;
+    }
+
+    .banner__link img {
+        min-height: 90px;
+        object-fit: contain;
     }
 }
 

@@ -197,3 +197,24 @@
     background-color: #F0F0F4;
     padding: 17px 43px 15px;
 }
+
+.product-slider .slick-dots {
+    bottom: -30px;
+}
+
+.product-slider .slick-dots button {
+    background-color: #c4c4c4;
+}
+
+.product-slider .slick-dots .slick-active button {
+    background-color: #1C62CD;
+}
+
+.slick-dots .slick-active button {
+    background-color: #fff;
+}
+
+.product-slider__item {
+    display: flex !important;
+    justify-content: center;
+}
