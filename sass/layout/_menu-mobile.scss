@@ -5,6 +5,7 @@
     position: absolute;
     transform: translateX(-100%);
     transition: transform 0.2s;
+    z-index: 10;
 
     &__item {
         position: relative;
@@ -37,7 +38,7 @@
 
 .menu {
     &__btn {
-        display: block;
+        display: none;
         background-color: transparent;
         padding: 0;
     }
@@ -51,6 +52,7 @@
     }
 
     &__mobile-linewrapper {
+        display: none;
         font-family: "SFProDisplay-Bold", sans-serif;
         font-weight: bold;
         background-color: #f0f0f4;
