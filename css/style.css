@@ -49,6 +49,8 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #2f3035;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 
 .container {
@@ -225,6 +227,14 @@ img {
   width: 100%;
   right: auto;
   left: 0;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__mobile-linewrapper {
+  display: none;
 }
 
 .banner-section__inner {
@@ -1755,5 +1765,101 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .menu__item + .menu__item {
+    margin-left: 20px;
+  }
+  .header__address {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 968px) {
+  .header__bottom {
+    display: none;
+  }
+  .menu__list {
+    display: none;
+  }
+  .menu__mobile-linewrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__address {
+    display: none;
+  }
+}
+
+.menu-mobile {
+  width: 243px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.menu-mobile__item {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile__item-address {
+  font-family: "SFProDisplay-Bold", sans-serif;
+  font-weight: bold;
+  margin-top: 60px;
+  padding-left: 53px;
+}
+
+.menu-mobile__link {
+  display: block;
+  padding-left: 53px;
+  padding-top: 36px;
+}
+
+.menu-mobile__img {
+  position: absolute;
+  bottom: 0;
+  left: 11px;
+}
+
+.menu-mobile--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu__btn {
+  display: block;
+  background-color: transparent;
+  padding: 0;
+}
+
+.menu__btn-line {
+  width: 34px;
+  height: 3px;
+  background-color: #2f3035;
+  margin: 8px 0;
+  border-radius: 3px;
+}
+
+.menu__mobile-linewrapper {
+  font-family: "SFProDisplay-Bold", sans-serif;
+  font-weight: bold;
+  background-color: #f0f0f4;
+  padding: 15px 0 15px 15px;
+  overflow-x: scroll;
+}
+
+.menu__mobile-line {
+  width: 450px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -73,4 +73,8 @@ $(function () {
         spacing   : "10px",
         normalFill: "#c4c4c4"
       });
+
+    $('.menu__btn').on('click', function() {
+        $('.menu-mobile').toggleClass('menu-mobile--active');
+    });
 });

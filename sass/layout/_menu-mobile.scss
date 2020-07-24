@@ -1,0 +1,64 @@
+.menu-mobile {
+    width: 243px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+
+    &__item {
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &__item-address {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        margin-top: 60px;
+        padding-left: 53px;
+    }
+
+    &__link {
+        display: block;
+        padding-left: 53px;
+        padding-top: 36px;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 11px;
+    }
+}
+
+.menu-mobile--active {
+    transform: translateX(0);
+}
+
+.menu {
+    &__btn {
+        display: block;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    &__btn-line {
+        width: 34px;
+        height: 3px;
+        background-color: #2f3035;
+        margin: 8px 0;
+        border-radius: 3px;
+    }
+
+    &__mobile-linewrapper {
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        background-color: #f0f0f4;
+        padding: 15px 0 15px 15px;
+        overflow-x: scroll;
+    }
+
+    &__mobile-line {
+        width: 450px;
+    }
+}
