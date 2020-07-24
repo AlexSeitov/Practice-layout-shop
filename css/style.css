@@ -807,6 +807,8 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1930,6 +1932,16 @@ span {
   }
 }
 
+@media (max-width: 968px) {
+  .footer__top-inner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer__top-item {
+    margin-bottom: 25px;
+  }
+}
+
 @media (max-width: 640px) {
   .header__address {
     display: none;
@@ -1964,6 +1976,75 @@ span {
     min-height: 90px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer__top-item {
+    width: 100%;
+  }
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer__bottom-link {
+    margin: 12px 0;
+  }
+  .footer__top-inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .footer__top-item.footer__top-newslatter {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-list {
+    display: none;
+  }
+  .footer__title-drop {
+    font-family: "SFProDisplay-Medium", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #7f7f7f;
+    padding: 15px 0;
+    position: relative;
+  }
+  .footer__title-drop::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 12px;
+    height: 8px;
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+  }
+  .footer__top-itemdrop {
+    border: 2px solid #F9F9FC;
+    padding: 0 16px;
+  }
+  .footer__top-item.footer__top-social {
+    border: none;
+  }
+  .footer__title-drop--active::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .footer .container {
+    padding: 0;
   }
 }
 
