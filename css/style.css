@@ -1842,6 +1842,10 @@ span {
   .banner-section__slider {
     max-width: 600px;
   }
+  .categories__inner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1927,6 +1931,9 @@ span {
 @media (max-width: 440px) {
   .banner-section__slider-img {
     min-height: 164px;
+  }
+  .categories__item {
+    padding: 20px 10px 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
