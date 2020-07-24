@@ -28,7 +28,6 @@
     }
 
     &__filter-btn {
-
     }
 
     &__filter-btn button {
@@ -74,7 +73,7 @@
 }
 
 .select-item {
-    border: 1.5px solid #D7D9DF;
+    border: 1.5px solid #d7d9df;
     padding: 8px 10px 7px 20px;
     margin-right: 34px;
 }
@@ -112,4 +111,8 @@
         border: 2px solid #1c62cd;
         color: #1c62cd;
     }
+}
+
+.aside__btn {
+    display: none;
 }

@@ -23,6 +23,12 @@
         <div class="header__top-inner">
 
           <nav class="menu">
+            <button class="menu__btn">
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+            </button>
+
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#">Магазины</a>
@@ -34,11 +40,11 @@
                 <a class="menu__link" href="#">Доставка и оплата</a>
               </li>
             </ul>
-          </nav> <!--/menu-->
+          </nav> 
 
           <a class="logo" href="#">
-            <img class="logo__img" src="/images/logo.svg" alt="logo">
-          </a> <!--/logo-->
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a> 
 
           <div class="header__box">
             <p class="header__address">Москва,  ул. Науки  25</p>
@@ -60,10 +66,113 @@
                 </a>
               </li>
             </ul>
-          </div> <!--/header__box-->
+          </div>
         </div>
       </div>
-    </div> <!--/header__top-->
+    </div> 
+
+    <ul class="menu-mobile">
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/user.svg" alt="">
+          <p>Войти</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/user.svg" alt="">
+          <p>Регистрация</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/heart.svg" alt="">
+          <p>Избранное</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/basket.svg" alt="">
+          <p>Корзина</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/home.svg" alt="">
+          <p>Магазины</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/percent.svg" alt="">
+          <p>Акции</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/shipping.svg"" alt="">
+          <p>Доставка и оплата</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Квадроциклы</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Катера</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Гидроциклы</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Лодки</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Вездеходы</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Снегоходы</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Двигатели</p>
+        </a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Запчасти</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item-address">Москва, <br>
+        ул. Науки  25</li>
+    </ul>
+
+    <div class="menu__mobile-linewrapper">
+      <ul class="menu__mobile-line">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Магазины</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Акции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Доставка и оплата</a>
+        </li>
+      </ul>
+    </div>
 
     <div class="header__bottom">
       <div class="container">
@@ -100,17 +209,19 @@
   <!--breadcrumbs-->
   <div class="breadcrumbs">
     <div class="container">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__list-item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__list-item">
-          <a href="#">Гидроциклы</a>
-        </li>
-        <li class="breadcrumbs__list-item">
-          <span>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
-        </li>
-      </ul>
+      <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list mobile-overflow">
+          <li class="breadcrumbs__list-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span>Гидроциклы</span>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span>Гидроциклы</span>
+          </li>
+          </ul>
+      </div>
     </div>
   </div> <!--/breadcrumbs-->
 
@@ -626,8 +737,8 @@
             </form>
         </div>
 
-          <div class="footer__top-item">
-            <h6 class="footer__top-title">Информация</h6>
+          <div class="footer__top-item footer__top-itemdrop">
+            <h6 class="footer__top-title footer__title-drop">Информация</h6>
             <ul class="footer-list">
               <li class="footer-list__item"><a href="#">О компании</a></li>
               <li class="footer-list__item"><a href="#">Контакты</a></li>
@@ -636,8 +747,8 @@
             </ul>
         </div>
 
-          <div class="footer__top-item">
-            <h6 class="footer__top-title">Интернет-магазин</h6>
+          <div class="footer__top-item footer__top-itemdrop">
+            <h6 class="footer__top-title footer__title-drop">Интернет-магазин</h6>
             <ul class="footer-list">
               <li class="footer-list__item"><a href="#">Доставка и самовывоз</a></li>
               <li class="footer-list__item"><a href="#">Оплата</a></li>
