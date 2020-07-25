@@ -1,5 +1,4 @@
 $(function () {
-    // slider banner
     
     $(".banner-section__slider").slick({
         dots: true,
@@ -15,26 +14,24 @@ $(function () {
           ]
     });
 
-    // tabs
 
     $('.tab').on('click', function(e) {
         e.preventDefault();
 
         $($(this).siblings()).removeClass('tab--active');
-        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+        $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content--active');
 
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
 
+        $('.product-slider').slick('setPosition');
     });
 
-    // favorite item
 
     $('.product-item__favorite').on('click', function() {
         $(this).toggleClass('product-item__favorite--active');
     });
 
-    // slider products
 
     $('.product-slider').slick({
         slidesToShow: 4,
@@ -78,18 +75,16 @@ $(function () {
           ]
     });
 
-    // formstyler
+
 
     $('.filter-style').styler();
 
-    // drop down list
 
     $('.filter__item-drop, .filter-extra').on('click', function() {
         $(this).toggleClass('filter__item-drop--active');
         $(this).next().slideToggle('200');
     });
 
-    // ionRangeSlide
 
     $(".js-range-slider").ionRangeSlider({
         type: "double",
@@ -98,17 +93,20 @@ $(function () {
         max: 500000,
     });
 
+
     $('.catalog__filter-btn-grid').on('click', function() {
         $(this).addClass('catalog__filter-buttons--active');
         $('.catalog__filter-btn-line').removeClass('catalog__filter-buttons--active');
         $('.product-item__wrapper').removeClass('product-item__wrapper--list');
     });
 
+
     $('.catalog__filter-btn-line').on('click', function() {
         $(this).addClass('catalog__filter-buttons--active');
         $('.catalog__filter-btn-grid').removeClass('catalog__filter-buttons--active');
         $('.product-item__wrapper').addClass('product-item__wrapper--list');
     });
+
 
     $(".rate-Yo").rateYo({
         starWidth: "23px",
@@ -117,14 +115,17 @@ $(function () {
         normalFill: "#c4c4c4"
       });
 
+
     $('.menu__btn').on('click', function() {
         $('.menu-mobile').toggleClass('menu-mobile--active');
     });
+
 
     $('.footer__title-drop').on('click', function() {
         $(this).next().slideToggle();
         $(this).toggleClass('footer__title-drop--active');
     });
+    
 
     $('.aside__btn').on('click', function() {
         $(this).next().slideToggle();

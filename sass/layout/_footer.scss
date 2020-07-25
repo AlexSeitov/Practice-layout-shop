@@ -25,8 +25,12 @@
         line-height: 17px;
     }
 
+    &__title-drop {
+        pointer-events: none;
+    }
+
     &__bottom {
-        padding: 46px 0 22px;
+        padding: 46px 15px 22px;
         display: flex;
         justify-content: center;
     }
